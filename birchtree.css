@@ -1,3 +1,4 @@
+/* General Rules */
 * {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -5,6 +6,36 @@
 a {
 	color: #189fcc;
 	text-decoration: none;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 42px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 34px;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 30px;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 26px;
+}
+
+h5 {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+h6 {
+	font-weight: 500;
+	font-size: 18px;
 }
 
 #container {
@@ -57,7 +88,7 @@ a {
 	border-radius: 4px;
 }
 
-/* Base Button Styling */
+/* Buttons */
 .bt-btn {
 	-webkit-appearance: none;
 	font-family: sans-serif;
@@ -93,7 +124,7 @@ a {
 	border-radius: 6px;
 	box-shadow: 0px 2px 8px #189fcc40;
 }
-/* Button Styles */
+
 .bt-success {
 	background: linear-gradient(140deg, #06D6A0, #0fe2aa);
 	box-shadow: 0px 2px 8px #06D6A040;
@@ -168,7 +199,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 	background-color: #f4f4f4;
-	margin-bottom: 30px;
+	margin: 0px 0px 30px 0px;
 	padding: auto 20px;
 }
 .nav-left {
