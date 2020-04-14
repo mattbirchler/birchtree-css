@@ -50,6 +50,35 @@
 	<button class="bt-btn bt-danger bt-mega">Danger</button>
 	<button class="bt-btn bt-dark bt-mega">Dark</button>
 	<button class="bt-btn bt-light bt-mega">Light</button>
+	
+	<h2>Inputs</h2>
+	<div class="input input-text">
+		<span class="input-label">Standard Text Field</span>
+		<input class="input-field" type="text" placeholder="someone@example.com" name="email">
+	</div>
+	<div class="input input-text input-mega">
+		<span class="input-label">Large Text Field</span>
+		<input class="input-field" type="text" placeholder="someone@example.com" name="email">
+	</div>
+	<div class="input input-chckbox">
+		<input type="checkbox"> <span class="input-label">Checkbox Stuff</span>
+	</div>
+	<div class="input input-select">
+		<select class="input-dropdown">
+			<option value="">-- Select An Option --</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+	<div class="input input-textarea">
+		<span class="input-label">Textarea</span>
+		<textarea placeholder="Enter your stuff here…"></textarea>
+	</div>
+	<div class="input input-upload">
+		<label class="input-label" for="file-upload">Upload a file</label>
+		<input type="file" class="file-upload" id="file-upload">
+	</div>
 </div>
 
 <style>
@@ -61,7 +90,7 @@
 	width: 700px;
 	max-width: 100%;
 	display: block;
-	margin: auto;
+	margin: 0px auto 100px auto;
 }
 
 /* Alerts */
@@ -165,4 +194,51 @@
 		box-shadow: 0px 2px 8px #00000030;
 		color: #073B4C;
 	}
+	
+/* Inputs */
+.input {
+	padding: 10px 0px;
+}
+.input-text, .input-textarea, .input-upload {
+	display: flex;
+	flex-direction: column;
+}
+.input-label {
+	padding-left: 3px;
+}
+.input-field {
+	border: 1px solid #e5e9ea;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 6px;
+	box-shadow: 0px 2px 8px #00000011;
+}
+textarea {
+	border: 1px solid #e5e9ea;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 6px;
+	box-shadow: 0px 2px 8px #00000011;
+}
+.input-mega .input-label {
+	font-size: 22px;
+}
+.input-mega .input-field {
+	font-size: 24px;
+	padding: 10px;
+}
+.input-dropdown {
+	width: 100%;
+	border: 1px solid #e5e9ea;
+	-webkit-appearance: none;
+	border-radius: 2px;
+	font-size: 16px;
+	padding: 6px;
+	box-shadow: 0px 2px 8px #00000011;
+}
+.file-upload {
+	font-size: 20px;
+}
 </style>
