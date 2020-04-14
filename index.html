@@ -1,23 +1,51 @@
 <div id="container">
+	<h1>Alerts</h1>
+	<div class="well">
+		These are alerts. They're not that exciting yet, which might be a problem, actually...
+	</div>
+	<div class="alert">
+		Hey, this is an alert that I think you should really care about!
+	</div>
+	<div class="alert alert-success">
+		Hey, this is an alert that I think you should really care about!
+	</div>
+	<div class="alert alert-warning">
+		Hey, this is an alert that I think you should really care about!
+	</div>
+	<div class="alert alert-danger">
+		Hey, this is an alert that I think you should really care about!
+	</div>
+	
+	<h1>Labels</h1>
+	<h2>Item <span class="label">Badge</span></h2>
+	<h3>Item <span class="label label-success">Badge 2</span></h3>
+	<h4>Item <span class="label label-warning">Another longer badge</span></h4>
+	<p>Item <span class="label label-danger">99+</span></p>
+	
 	<h1>Buttons</h1>
+	<div class="well">
+		These are buttons! I think they look good, and you should use them whenever you can.
+	</div>
+	
+	<h2>Standard</h2>
 	<button class="bt-btn">Default</button>
-	<button class="bt-btn bt-submit">Submit</button>
+	<button class="bt-btn bt-success">Submit</button>
 	<button class="bt-btn bt-warning">Warning</button>
 	<button class="bt-btn bt-danger">Danger</button>
 	<button class="bt-btn bt-dark">Dark</button>
 	<button class="bt-btn bt-light">Light</button>
 
-	<h1>Small</h1>
+	<h2>Small</h2>
 	<button class="bt-btn bt-sm">Default</button>
-	<button class="bt-btn bt-submit bt-sm">Submit</button>
+	<button class="bt-btn bt-success bt-sm">Submit</button>
 	<button class="bt-btn bt-warning bt-sm">Warning</button>
 	<button class="bt-btn bt-danger bt-sm">Danger</button>
 	<button class="bt-btn bt-dark bt-sm">Dark</button>
 	<button class="bt-btn bt-light bt-sm">Light</button>
 
-	<h1>Mega</h1>
+	<h2>Large (mega!)</h2>
 	<button class="bt-btn bt-mega">Default</button>
-	<button class="bt-btn bt-submit bt-mega">Submit</button>
+	<button class="bt-btn bt-success bt-mega">Submit</button>
 	<button class="bt-btn bt-warning bt-mega">Warning</button>
 	<button class="bt-btn bt-danger bt-mega">Danger</button>
 	<button class="bt-btn bt-dark bt-mega">Dark</button>
@@ -26,14 +54,59 @@
 
 <style>
 * {
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #container {
 	width: 700px;
+	max-width: 100%;
 	display: block;
 	margin: auto;
 }
+
+/* Alerts */
+.alert {
+	background-color: #189fcc66;
+	padding: 20px;
+	margin: 20px 0px;
+	border-radius: 4px;
+	box-shadow: 0px 2px 8px #00000022;
+}
+.alert-success {
+	background-color: #06D6A066;
+}
+.alert-warning {
+	background-color: #f47f2c66;
+}
+.alert-danger {
+	background-color: #EF476F66;
+}
+
+/* Labels */
+.label {
+	background-color: #189fcc;
+	border-radius: 2px;
+	padding: 5px 10px;
+	color: white;
+	font-size: 0.7em;
+	font-weight: 700;
+}
+.label-success {
+	background-color: #06D6A0;
+}
+.label-warning {
+	background-color: #f47f2c;
+}
+.label-danger {
+	background-color: #EF476F;
+}
+
+.well {
+	background-color: #e5e9ea;
+	padding: 20px;
+	border-radius: 4px;
+}
+
 /* Base Button Styling */
 	.bt-btn {
 		-webkit-appearance: none;
@@ -71,7 +144,7 @@
 		box-shadow: 0px 2px 8px #189fcc40;
 	}
 	/* Button Styles */
-	.bt-submit {
+	.bt-success {
 		background: linear-gradient(140deg, #06D6A0, #0fe2aa);
 		box-shadow: 0px 2px 8px #06D6A040;
 	}
