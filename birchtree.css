@@ -1,75 +1,3 @@
-/* Layout */
-
-.block {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	max-width: 100%;
-	margin: 0px;
-	padding: 0px;
-}
-.block-1200 {
-	width: 1200px;
-}
-.block-900 {
-	width: 900px;
-}
-.block-700 {
-	width: 700px;
-}
-.block-center {
-	margin-left: auto;
-	margin-right: auto;
-}
-.sub-block-12 {
-	width: 100%;
-	display: inline-block;
-}
-.sub-block-11 {
-	width: 91.66666667%;
-	display: inline-block;
-}
-.sub-block-10 {
-	width: 83.33333333%;
-	display: inline-block;
-}
-.sub-block-9 {
-	width: 75%;
-	display: inline-block;
-}
-.sub-block-8 {
-	width: 66.66666667%;
-	display: inline-block;
-}
-.sub-block-7 {
-	width: 58.333333333;
-	display: inline-block;
-}
-.sub-block-6 {
-	width: 49%;
-	display: inline-block;
-}
-.sub-block-5 {
-	width: 41.66666667%;
-	display: inline-block;
-}
-.sub-block-4 {
-	width: 33.333333333;
-	display: inline-block;
-}
-.sub-block-3 {
-	width: 25%;
-	display: inline-block;
-}
-.sub-block-2 {
-	width: 16.66666667%;
-	display: inline-block;
-}
-.sub-block-1 {
-	width: 8.333333333;
-	display: inline-block;
-}
-
 /* General Rules */
 * {
 	font-family: -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -133,7 +61,7 @@ h6 {
 	font-size: 18px;
 }
 
-#container {
+.container {
 	width: 700px;
 	max-width: 100%;
 	display: block;
@@ -185,9 +113,6 @@ h6 {
 
 /* Buttons */
 .bt-btn {
-	margin-top: 10px;
-}
-.bt {
 	-webkit-appearance: none;
 	font-family: sans-serif;
 	background: linear-gradient(140deg, #189fcc, #0babe0);
@@ -201,7 +126,7 @@ h6 {
 	min-width: 140px;
 	transition: 200ms;
 }
-.bt:hover {
+.bt-btn:hover {
 	cursor: pointer;
 	opacity: 0.95;
 	transition: 200ms;
@@ -222,7 +147,7 @@ h6 {
 	border-radius: 6px;
 	box-shadow: 0px 2px 8px #189fcc40;
 }
-
+/* Button Styles */
 .bt-success {
 	background: linear-gradient(140deg, #06D6A0, #0fe2aa);
 	box-shadow: 0px 2px 8px #06D6A040;
@@ -243,14 +168,6 @@ h6 {
 	background: linear-gradient(140deg, #e5e9ea, #f4f4f4);
 	box-shadow: 0px 2px 8px #00000030;
 	color: #073B4C;
-}
-
-.bt-inline {
-	height: 60px;
-}
-.bt-inline .bt-btn {
-	position: relative;
-	bottom: 0px;
 }
 
 /* Inputs */
