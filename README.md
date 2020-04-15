@@ -1,10 +1,10 @@
 # Birchtree.css
 
-*This is a work in progress*
-
-Mockup up simply personal pages or test sites for your business typically mean using zero, to close to zero styling, and moving on because “it’s just a test site, who cares?” Oh, and these pages usually look like trash on mobile. This is all reasonable, it doesn’t need to be this way!
+Mocking up simple personal pages or test sites for your business typically mean using zero, to close to zero styling, and moving on because “it’s just a test site, who cares?” Oh, and these pages usually look like trash on mobile. This is all reasonable, it doesn’t need to be this way!
 
 Birchtree.css is a small CSS package you can use to make those sites look good with very little effort. You could use this for a full, public website, but it’s lacking a ton of features, so you’d have to build all that out yourself.
+
+Yes, something like Bootstrap does this, but (a) I don't love how Bootstrap looks out of the box, and (b) our aim is to have as little code as possible. Just because I don't see the extent of Bootstrap, doesn't mean it's not overkill for some things.
 
 # Usage
 
