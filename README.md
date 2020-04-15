@@ -12,8 +12,6 @@ Similar to Bootstrap, this is almost entirely based on classes. Simply create a 
 <button class="bt-btn">Pay Now</button>
 ```
 
-<button class="bt-btn">Pay Now</button>
-
 ...is all it takes to get a styled button.
 
 Next, add a second class to create a specific type of button, such as...
