@@ -38,6 +38,7 @@ This ain’t Bootstrap, so don’t look to this to do advanced styling for you, 
 ```html
 <div class=“container”>
     { test page content }
+</div>
 ```
 
 #### Form Inputs
