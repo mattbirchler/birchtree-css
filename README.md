@@ -6,11 +6,11 @@ Mockup up simply personal pages or test sites for your business typically mean u
 
 Birchtree.css is a small CSS package you can use to make those sites look good with very little effort. You could use this for a full, public website, but it’s lacking a ton of features, so you’d have to build all that out yourself.
 
-## Usage
+# Usage
 
 Think of this like Bootstrap, but way simpler and way smaller. You use some basic HTML formatting and class names to style everything from form inputs to buttons to headers and more.
 
-### Step 1: Import birchtree.css
+# Step 1: Import birchtree.css
 
 In your HTML or PHP file, load the CSS file.
 
@@ -18,9 +18,9 @@ In your HTML or PHP file, load the CSS file.
 <link rel=“stylesheet” src=“birchtree.css”>
 ```
 
-### Step 2: Use the below formatting to get the styles.
+# Step 2: Use the below formatting to get the styles.
 
-#### Contents
+## Contents
 
 * Layout
 * Form Inputs
@@ -31,7 +31,7 @@ In your HTML or PHP file, load the CSS file.
 * Labels
 * Navigation Bars
 
-#### Layout
+## Layout
 
 This ain’t Bootstrap, so don’t look to this to do advanced styling for you, but you can use the <code>container</code> class to hold all parts of your page. This simply constrains the width and centers everything on the page.
 
@@ -41,7 +41,7 @@ This ain’t Bootstrap, so don’t look to this to do advanced styling for you, 
 </div>
 ```
 
-#### Form Inputs
+## Form Inputs
 
 The building block of almost any test page, form inputs are easily laid out.
 
@@ -103,7 +103,7 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 </div>
 ```
 
-#### Buttons
+## Buttons
 
 ![](img/buttons.png)
 
@@ -134,7 +134,7 @@ Buttons can be made larger or smaller if you’d like, using <code>btn-sm</code>
 <button class="btn btn-danger btn-mega">Warning, Please Confirm This</button>
 ```
 
-#### Headings
+## Headings
 
 ![](img/headings.png)
 
@@ -150,7 +150,7 @@ Oh, and try using the class <code>site-title</code> to make your page’s name p
 <span class=“site-title”>Page Title</span>
 ```
 
-#### Information Wells
+## Information Wells
 
 ![](img/wells.png)
 
@@ -162,7 +162,7 @@ Typically used for instructional text.
 </div>
 ```
 
-#### Alerts
+## Alerts
 
 ![](img/alerts.png)
 
@@ -186,7 +186,7 @@ Much like buttons, this creates a blue alert, and there are some alternate style
 </div>
 ```
 
-#### Labels
+## Labels
 
 ![](img/labels.png)
 
@@ -208,7 +208,7 @@ Again, there are a few colors to choose from.
 <p>Item <span class=“label label-danger”>Badge</span></p>
 ```
 
-#### Navigation Bars
+## Navigation Bars
 
 ![](img/nav.png)
 
