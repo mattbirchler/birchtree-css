@@ -254,6 +254,14 @@ textarea {
 .nav-item {
 	padding: 20px 10px;
 }
+.nav-item:hover {
+	background-color: #189fcc;
+	cursor: pointer;
+}
+.nav-item:hover > a {
+	color: white;
+}
 .active {
 	color: #000000;
+	border-bottom: 3px solid #189fcc;
 }
