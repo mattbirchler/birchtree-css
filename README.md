@@ -1,12 +1,14 @@
-# BirchTree Buttons
+# Birchtree.css
+
+### Work in progress
 
 ![](buttons.png)
 
-A few buttons to get you started on your next proejct. These are meant to be simple, but add a little style to your projects without having to think about them much.
+A few UI elements to get you going with simple web projects. This is not meant to replace Bootstrap by any means, it's just aimed at giving you a lightweight way to make things like personal site and test pages look a little nicer.
 
 ## Usage
 
-Similar to Bootstrap, this is all based on classes. Simply create a <code>button</code> element and give it the class <code>bt-btn</code>. So something like...
+Similar to Bootstrap, this is almost entirely based on classes. Simply create a <code>button</code> element and give it the class <code>bt-btn</code>. So something like...
 
 ```html
 <button class="bt-btn">Pay Now</button>
@@ -22,11 +24,11 @@ Next, add a second class to create a specific type of button, such as...
 
 You can choose between 5 styles of buttons (besides the default blue):
 
-* bt-submit
-* bt-warning
-* bt-danger
-* bt-dark
-* bt-light
+* <code>bt-submit</code>
+* <code>bt-warning</code>
+* <code>bt-danger</code>
+* <code>bt-dark</code>
+* <code>bt-light</code>
 
 Finally, you can choose the size of the button. The standard size is fine for most situations, but if you want something a bit smaller or larder, options are available using <code>bt-sm</code> and <code>bt-mega</code>.
 
