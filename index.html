@@ -8,137 +8,258 @@
     <div class="nav-item"><a href="https://github.com/mattbirchler/birchtree-css" target="_blank">GitHub</a></div>
     <div class="nav-item"><a href="https://birchtree.me" target="_blank">BirchTree</a></div>
 </div>
+<style>
+    .highlight {
+        background-color: #272336;
+        padding: 1px 20px;
+        color: white;
+        border-radius: 4px;
+        font-weight: 500;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+    pre, pre span {
+        font-family: monospace;
+        font-weight: 500;
+    }
+    .pl-ent {
+        color: #76F0B4;
+    }
+    .pl-e {
+        color: #FADF4B;
+    }
+    .pl-s {
+        color: #FB8E2C;
+    }
+</style>
 <div class="container">
     <h1 class="site-title">Birchtree.css</h1>
     <div class="well">
-        Birchtree.css is an easy-to-use, basic CSS library you can use in just about any web project you're working on. This is a work in progress, and is being created by a team of one, so please bear with me as I build out this project. If you have feeback, please feel free to email <a href="mailto:mattbirchler@outlook.com">mattbirchler@outlook.com</a> or comment on the GitHub project and I'll be happy to help.
+        Mocking up simple personal pages or test sites for your business typically mean using zero, to close to zero styling, and moving on because "it's just a test site, who cares?" Oh, and these pages usually look like trash on mobile. This is all reasonable, it doesn't need to be this way!
+        <br><br>
+        Birchtree.css is a small CSS package you can use to make those sites look good with very little effort. You could use this for a full, public website, but it's lacking a ton of features, so you'd have to build all that out yourself.
+        <br><br>
+        Yes, something like Bootstrap does this, but (a) I don't love how Bootstrap looks out of the box, and (b) our aim is to have as little code as possible. Just because I don't see the extent of Bootstrap, doesn't mean it's not overkill for some things.
     </div>
-    <h3>Sign Up for Updates</h3>
-    <div class="input input-text">
-        <span class="input-label">Name</span>
-        <input class="input-field" type="text" placeholder="Jane Doe" name="email">
+    <h1>Usage</h1>
+    <p>Think of this like Bootstrap, but way simpler and way smaller. You use some basic HTML formatting and class names to style everything from form inputs to buttons to headers and more.</p>
+    <h2>Step 1: Import birchtree.css</h2>
+    <p>Clone the birhtree.css file into your project and load it from your header.</p>
+    <div class="highlight highlight-text-html-basic">
+        <pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s">"stylesheet"</span> <span class="pl-e">src</span>=<span class="pl-s">"birchtree.css"</span>&gt;</pre>
     </div>
+
+    <h2>Step 2: Use the below formatting to get the styles</h2>
+
+    <h3>Contents</h3>
+
+    <ul>
+        <li>Layout</li>
+        <li>Form Inputs</li>
+        <li>Buttons</li>
+        <li>Headings</li>
+        <li>Information Wells</li>
+        <li>Alerts</li>
+        <li>Labels</li>
+        <li>Navigation</li>
+    </ul>
+
+    <h3>Layout</h3>
+    <div class="well">
+        This ain't Bootstrap, so don't look to this to do advanced styling for you, but you can use the container class to hold all parts of your page. This simply constrains the width and centers everything on the page.
+    </div>
+
+    <div class="highlight highlight-text-html-basic">
+<pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"container"</span>&gt;
+    { page content }
+&lt;/<span class="pl-ent">div</span>&gt;</pre>
+</div>
+
+    <h3>Form Inputs</h3>
+
+    <h4>Text</h4>
+
     <div class="input input-text">
         <span class="input-label">Email Address</span>
-        <input class="input-field" type="text" placeholder="someone@example.com" name="email">
+        <input class="input-field" type="text" placeholder="hey@yo.co" name="email">
     </div>
-    <button class="bt-btn bt-success">Submit</button>
-    <hr>
-    <h1>Components</h1>
-    <h2>Headings</h2>
-    <div class="well">
-        Headings are basic, and are slightly modified from the standard CSS most browsers use.
-    </div>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    <h2>Alerts</h2>
-    <div class="well">
-        These are alerts. They're not that exciting yet, which might be a problem, actually...
-    </div>
-    <div class="alert">
-        Hey, this is an alert that I think you should really care about!
-    </div>
-    <div class="alert alert-success">
-        Hey, this is an alert that I think you should really care about!
-    </div>
-    <div class="alert alert-warning">
-        Hey, this is an alert that I think you should really care about!
-    </div>
-    <div class="alert alert-danger">
-        Hey, this is an alert that I think you should really care about!
-    </div>
-    <h2>Labels</h2>
-    <h4>Item <span class="label">Badge</span></h4>
-    <h5>Item <span class="label label-success">Badge 2</span></h5>
-    <h6>Item <span class="label label-warning">Another longer badge</span></h6>
-    <p>Item <span class="label label-danger">99+</span></p>
-    <h2>Buttons</h2>
-    <div class="well">
-        These are buttons! I think they look good, and you should use them whenever you can.
-    </div>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"input</span> <span class="pl-e">input-text"</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"input-label"</span>&gt;Email Address&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;<span class="pl-ent">input</span> <span class="pl-e">class</span>=<span class="pl-s">"input-field"</span> <span class="pl-e">type</span>=<span class="pl-s">"text"</span> <span class="pl-e">placeholder</span>=<span class="pl-s">"hey@yo.co"</span> <span class="pl-e">name</span>=<span class="pl-s">"email"</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>You can also create large text fields.</p>
+
+<div class="input input-text input-mega">
+    <span class="input-label">Large Text Field</span>
+    <input class="input-field" type="text" placeholder="someone@example.com" name="email">
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"input</span> <span class="pl-e">input-text input-mega"</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"input-label"</span>&gt;Email Address&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;<span class="pl-ent">input</span> <span class="pl-e">class</span>=<span class="pl-s">"input-field"</span> <span class="pl-e">type</span>=<span class="pl-s">"text"</span> <span class="pl-e">placeholder</span>=<span class="pl-s">"hey@yo.co"</span> <span class="pl-e">name</span>=<span class="pl-s">"email"</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>Checkbox</h3>
+<div class="input input-chckbox">
+    <input type="checkbox"> <span class="input-label">Check this for fun</span>
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"input</span> <span class="pl-e">input-chckbox"</span>&gt;
+    &lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s">"checkbox"</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"input-label"</span>&gt;Checkbox Stuff&lt;/<span class="pl-ent">span</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>Select</h3>
+
+<div class="input input-select">
+    <select class="input-dropdown">
+        <option value="">-- Select An Option --</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"input</span> <span class="pl-e">input-select"</span>&gt;
+    &lt;<span class="pl-ent">select</span> <span class="pl-e">class</span>=<span class="pl-s">"input-dropdown"</span>&gt;
+        &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s">""</span>&gt;-- Select An Option --&lt;/<span class="pl-ent">option</span>&gt;
+        &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s">"1"</span>&gt;One&lt;/<span class="pl-ent">option</span>&gt;
+        &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s">"2"</span>&gt;Two&lt;/<span class="pl-ent">option</span>&gt;
+        &lt;<span class="pl-ent">option</span> <span class="pl-e">value</span>=<span class="pl-s">"3"</span>&gt;Three&lt;/<span class="pl-ent">option</span>&gt;
+    &lt;/<span class="pl-ent">select</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>File Upload</h3>
+
+<div class="input input-upload">
+    <label class="input-label" for="file-upload">Upload a file</label>
+    <input type="file" class="file-upload" id="file-upload">
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"input</span> <span class="pl-e">input-upload"</span>&gt;
+    &lt;<span class="pl-ent">label</span> <span class="pl-e">class</span>=<span class="pl-s">"input-label"</span> <span class="pl-e">for</span>=<span class="pl-s">"file-upload"</span>&gt;Upload a file&lt;/<span class="pl-ent">label</span>&gt;
+    &lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s">"file"</span> <span class="pl-e">class</span>=<span class="pl-s">"file-upload"</span> <span class="pl-e">id</span>=<span class="pl-s">"file-upload"</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>Buttons</h3>
+
+<button class="btn">Default</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-dark">Dark</button>
+<button class="btn btn-light">Light</button>
     
-	<h2>Standard</h2>
-	<button class="btn">Default</button>
-	<button class="btn btn-success">Submit</button>
-	<button class="btn btn-warning">Warning</button>
-	<button class="btn btn-danger">Danger</button>
-	<button class="btn btn-dark">Dark</button>
-	<button class="btn btn-light">Light</button>
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn<span class="pl-pds">"</span></span>&gt;Default&lt;/<span class="pl-ent">button</span>&gt;
+&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-success<span class="pl-pds">"</span></span>&gt;Success&lt;/<span class="pl-ent">button</span>&gt;
+&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-warning<span class="pl-pds">"</span></span>&gt;Warning&lt;/<span class="pl-ent">button</span>&gt;
+&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-danger<span class="pl-pds">"</span></span>&gt;Danger&lt;/<span class="pl-ent">button</span>&gt;
+&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-dark<span class="pl-pds">"</span></span>&gt;Dark&lt;/<span class="pl-ent">button</span>&gt;
+&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-light<span class="pl-pds">"</span></span>&gt;Light&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
 
-	<h2>Small</h2>
-	<button class="btn btn-sm">Default</button>
-	<button class="btn btn-success btn-sm">Submit</button>
-	<button class="btn btn-warning btn-sm">Warning</button>
-	<button class="btn btn-danger btn-sm">Danger</button>
-	<button class="btn btn-dark btn-sm">Dark</button>
-	<button class="btn btn-light btn-sm">Light</button>
+<p>You can also make smaller or larger buttons.</p>
 
-	<h2>Large (mega!)</h2>
-	<button class="btn btn-mega">Default</button>
-	<button class="btn btn-success btn-mega">Submit</button>
-	<button class="btn btn-warning btn-mega">Warning</button>
-	<button class="btn btn-danger btn-mega">Danger</button>
-	<button class="btn btn-dark btn-mega">Dark</button>
-    <button class="btn btn-light btn-mega">Light</button>
+<button class="btn btn-sm">Small Button</button>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-sm<span class="pl-pds">"</span></span>&gt;Small Button&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+
+<button class="btn btn-mega">Large Button</button>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>btn btn-mega<span class="pl-pds">"</span></span>&gt;Large Button&lt;/<span class="pl-ent">button</span>&gt;</pre></div>
+
+<h3>Headings</h3>
+<p>Nothing special to do here, just use headings like normal.</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<h3>Wells</h3>
+
+<div class="well">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"well"</span>&gt;
+    Paragraph of text goes here.
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>Alerts</h3>
+
+<div class="alert">
+    Hey, this is an alert that I think you should really care about!
+</div>
+<div class="alert alert-success">
+    Hey, this is an alert that I think you should really care about!
+</div>
+<div class="alert alert-warning">
+    Hey, this is an alert that I think you should really care about!
+</div>
+<div class="alert alert-danger">
+    Hey, this is an alert that I think you should really care about!
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"alert"</span>&gt;
+    Hey, this is an alert that I think you should really care about!
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h3>Labels</h3>
+<h4>Item <span class="label">Badge</span></h4>
+<h5>Item <span class="label label-success">Badge 2</span></h5>
+<h6>Item <span class="label label-warning">Another longer badge</span></h6>
+<p>Item <span class="label label-danger">99+</span></p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">p</span>&gt;Item &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"label"</span>&gt;Badge&lt;/<span class="pl-ent">span</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span>&gt;Item &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"label label-success"</span>&gt;Badge&lt;/<span class="pl-ent">span</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span>&gt;Item &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"label label-warning"</span>&gt;Badge&lt;/<span class="pl-ent">span</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;
+&lt;<span class="pl-ent">p</span>&gt;Item &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s">"label label-danger"</span>&gt;Badge&lt;/<span class="pl-ent">span</span>&gt;&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
     
+<h3>Navigation</h3>
 
-    <h2>Inputs</h2>
-    <div class="input input-text">
-        <span class="input-label">Standard Text Field</span>
-        <input class="input-field" type="text" placeholder="someone@example.com" name="email">
-    </div>
-    <div class="input input-text input-mega">
-        <span class="input-label">Large Text Field</span>
-        <input class="input-field" type="text" placeholder="someone@example.com" name="email">
-    </div>
-    <div class="input input-chckbox">
-        <input type="checkbox"> <span class="input-label">Checkbox Stuff</span>
-    </div>
-    <div class="input input-select">
-        <select class="input-dropdown">
-            <option value="">-- Select An Option --</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-    </div>
-    <div class="input input-textarea">
-        <span class="input-label">Textarea</span>
-        <textarea placeholder="Enter your stuff here..."></textarea>
-    </div>
-    <div class="input input-upload">
-        <label class="input-label" for="file-upload">Upload a file</label>
-        <input type="file" class="file-upload" id="file-upload">
-	</div>
+<p>If you want to link to a few other pages, use the navigation bar element to make nicer links to your other pages.</p>
 
-	<div class="sub-block-12">
-		<h2>Navigation</h2>
-		<h3>Standard Nav</h3>
-		<div class="nav">
-			<div class="nav-item active">Home</div>
-			<div class="nav-item"><a href="#">About Me</a></div>
-			<div class="nav-item"><a href="#">Blog</a></div>
-			<div class="nav-item"><a href="#">Projects</a></div>
-		</div>
-		<h3>Left-Aligned Nav</h3>
-		<div class="nav nav-left">
-			<div class="nav-item active">Home</div>
-			<div class="nav-item"><a href="#">About Me</a></div>
-			<div class="nav-item"><a href="#">Blog</a></div>
-			<div class="nav-item"><a href="#">Projects</a></div>
-		</div>
-		<h3>Right-Aligned Nav</h3>
-		<div class="nav nav-right">
-			<div class="nav-item active">Home</div>
-			<div class="nav-item"><a href="#">About Me</a></div>
-			<div class="nav-item"><a href="#">Blog</a></div>
-			<div class="nav-item"><a href="#">Projects</a></div>
-		</div>
-	</div>
+<div class="nav">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item"><a href="https://google.com" target="_blank">Google</a></div>
+    <div class="nav-item"><a href="https://github.com" target="_blank">GitHub</a></div>
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav"</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item</span> <span class="pl-e">active"</span>&gt;Home&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item"</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s">"https://google.com"</span> <span class="pl-e">target</span>=<span class="pl-s">"_blank"</span>&gt;Google&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item"</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s">"https://github.com"</span> <span class="pl-e">target</span>=<span class="pl-s">"_blank"</span>&gt;GitHub&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+    
+<p>The default behavior is to center the items, but you can also left or right align the menu items.</p>
+
+<div class="nav nav-left">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item"><a href="https://google.com" target="_blank">Google</a></div>
+    <div class="nav-item"><a href="https://github.com" target="_blank">GitHub</a></div>
+</div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav nav-left"</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item</span> <span class="pl-e">active"</span>&gt;Home&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item"</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s">"https://google.com"</span> <span class="pl-e">target</span>=<span class="pl-s">"_blank"</span>&gt;Google&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item"</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s">"https://github.com"</span> <span class="pl-e">target</span>=<span class="pl-s">"_blank"</span>&gt;GitHub&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<div class="nav nav-right">
+    <div class="nav-item active">Home</div>
+    <div class="nav-item"><a href="https://google.com" target="_blank">Google</a></div>
+    <div class="nav-item"><a href="https://github.com" target="_blank">GitHub</a></div>
+</div>
+
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav nav-right"</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item</span> <span class="pl-e">active"</span>&gt;Home&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item"</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s">"https://google.com"</span> <span class="pl-e">target</span>=<span class="pl-s">"_blank"</span>&gt;Google&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s">"nav-item"</span>&gt;&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s">"https://github.com"</span> <span class="pl-e">target</span>=<span class="pl-s">"_blank"</span>&gt;GitHub&lt;/<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+
 </div>
 
 <style>
