@@ -47,6 +47,8 @@ The building block of almost any test page, form inputs are easily laid out.
 
 **Text**
 
+![](img/text-input.png)
+
 ```html
 <div class=“input input-text”>
     <span class=“input-label”>Email Address</span>
@@ -55,6 +57,8 @@ The building block of almost any test page, form inputs are easily laid out.
 ```
 
 You can also make larger text fields by adding the <code>input-mega</code> class to the <code>input-text</code> element.
+
+![](img/text-input-large.png)
 
 ```html
 <div class=“input input-text input-mega”>
@@ -65,6 +69,8 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 
 **Checkbox**
 
+![](img/checkbox.png)
+
 ```html
 <div class=“input input-chckbox”>
     <input type=“checkbox”> <span class=“input-label”>Checkbox Stuff</span>
@@ -72,6 +78,8 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 ```
 
 **Select**
+
+![](img/select.png)
 
 ```html
 <div class=“input input-select”>
@@ -86,6 +94,8 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 
 **File Upload**
 
+![](img/upload.png)
+
 ```html
 <div class=“input input-upload”>
     <label class=“input-label” for=“file-upload”>Upload a file</label>
@@ -94,6 +104,8 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 ```
 
 #### Buttons
+
+![](img/buttons.png)
 
 Rendering a basic button is simple.
 
@@ -124,6 +136,8 @@ Buttons can be made larger or smaller if you’d like, using <code>btn-sm</code>
 
 #### Headings
 
+![](img/headings.png)
+
 There is nothing special to do here, Birchtree.css simply makes some small adjustments to heading designs.
 
 ```html
@@ -138,6 +152,8 @@ Oh, and try using the class <code>site-title</code> to make your page’s name p
 
 #### Information Wells
 
+![](img/wells.png)
+
 Typically used for instructional text.
 
 ```html
@@ -147,6 +163,8 @@ Typically used for instructional text.
 ```
 
 #### Alerts
+
+![](img/alerts.png)
 
 Much like a well, these are call outs you can use to show success or error messages, or whatever you want, really.
 
@@ -170,6 +188,8 @@ Much like buttons, this creates a blue alert, and there are some alternate style
 
 #### Labels
 
+![](img/labels.png)
+
 If you need to put a badge/label next to something to call it out, labels let you do this.
 
 ```html
@@ -190,6 +210,8 @@ Again, there are a few colors to choose from.
 
 #### Navigation Bars
 
+![](img/nav.png)
+
 If you want to link to a few other pages, use the navigation bar element to make nicer links to your other pages.
 
 ```html
@@ -202,11 +224,15 @@ If you want to link to a few other pages, use the navigation bar element to make
 
 The default is to center the menu items, but you can left or right-justify them using:
 
+![](img/nav-left.png)
+
 ```html
 <div class=“nav nav-left”>
     { nav items }
 </div>
 ```
+
+![](img/nav-right.png)
 
 ```html
 <div class=“nav nav-right”>
