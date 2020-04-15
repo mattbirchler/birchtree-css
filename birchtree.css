@@ -17,18 +17,57 @@
 .block-700 {
 	width: 700px;
 }
-.block-half {
-	width: 50%;
-}
-.block-quarter {
-	width: 25%;
-}
 .block-center {
 	margin-left: auto;
 	margin-right: auto;
 }
-.sub-block {
+.sub-block-12 {
 	width: 100%;
+	display: inline-block;
+}
+.sub-block-11 {
+	width: 91.66666667%;
+	display: inline-block;
+}
+.sub-block-10 {
+	width: 83.33333333%;
+	display: inline-block;
+}
+.sub-block-9 {
+	width: 75%;
+	display: inline-block;
+}
+.sub-block-8 {
+	width: 66.66666667%;
+	display: inline-block;
+}
+.sub-block-7 {
+	width: 58.333333333;
+	display: inline-block;
+}
+.sub-block-6 {
+	width: 49%;
+	display: inline-block;
+}
+.sub-block-5 {
+	width: 41.66666667%;
+	display: inline-block;
+}
+.sub-block-4 {
+	width: 33.333333333;
+	display: inline-block;
+}
+.sub-block-3 {
+	width: 25%;
+	display: inline-block;
+}
+.sub-block-2 {
+	width: 16.66666667%;
+	display: inline-block;
+}
+.sub-block-1 {
+	width: 8.333333333;
+	display: inline-block;
 }
 
 /* General Rules */
@@ -46,6 +85,13 @@ a {
 	text-decoration: none;
 }
 
+hr {
+	color: black;
+	width: 100%;
+	border: 0.5px solid black;
+	margin: 40px 0;
+}
+
 .site-title {
 	font-size: 50px;
 	font-weight: 700;
@@ -53,31 +99,37 @@ a {
 
 h1 {
 	font-weight: 300;
+	margin: 20px 0 10px 0;
 	font-size: 42px;
 }
 
 h2 {
 	font-weight: 300;
+	margin: 20px 0 10px 0;
 	font-size: 34px;
 }
 
 h3 {
 	font-weight: 300;
+	margin: 20px 0 10px 0;
 	font-size: 30px;
 }
 
 h4 {
 	font-weight: 300;
+	margin: 20px 0 10px 0;
 	font-size: 26px;
 }
 
 h5 {
 	font-weight: 300;
+	margin: 20px 0 10px 0;
 	font-size: 22px;
 }
 
 h6 {
 	font-weight: 300;
+	margin: 20px 0 10px 0;
 	font-size: 18px;
 }
 
@@ -133,6 +185,9 @@ h6 {
 
 /* Buttons */
 .bt-btn {
+	margin-top: 10px;
+}
+.bt {
 	-webkit-appearance: none;
 	font-family: sans-serif;
 	background: linear-gradient(140deg, #189fcc, #0babe0);
@@ -146,7 +201,7 @@ h6 {
 	min-width: 140px;
 	transition: 200ms;
 }
-.bt-btn:hover {
+.bt:hover {
 	cursor: pointer;
 	opacity: 0.95;
 	transition: 200ms;
@@ -190,9 +245,18 @@ h6 {
 	color: #073B4C;
 }
 
+.bt-inline {
+	height: 60px;
+}
+.bt-inline .bt-btn {
+	position: relative;
+	bottom: 0px;
+}
+
 /* Inputs */
 .input {
 	padding: 10px 0px;
+	height: 60px;
 }
 .input-text, .input-textarea, .input-upload {
 	display: flex;
