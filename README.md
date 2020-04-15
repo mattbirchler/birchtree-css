@@ -130,6 +130,12 @@ There is nothing special to do here, Birchtree.css simply makes some small adjus
 <h1>This is a heading with style</h1>
 ```
 
+Oh, and try using the class <code>site-title</code> to make your page’s name pop even more.
+
+```html
+<span class=“site-title”>Page Title</span>
+```
+
 #### Information Wells
 
 Typically used for instructional text.
