@@ -77,7 +77,7 @@ h5 {
 }
 
 h6 {
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 18px;
 }
 
@@ -251,8 +251,12 @@ textarea {
 .nav-right {
 	justify-content: flex-end;
 }
+.nav-shadow {
+	box-shadow: 0px 2px 12px #00000020;
+}
 .nav-item {
 	padding: 20px 10px;
+	transition: 100ms;
 }
 .nav-item:hover {
 	background-color: #189fcc;
@@ -264,4 +268,7 @@ textarea {
 .active {
 	color: #000000;
 	border-bottom: 3px solid #189fcc;
+}
+.active:hover {
+	color:white;
 }
