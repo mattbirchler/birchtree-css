@@ -22,14 +22,14 @@ In your HTML or PHP file, load the CSS file.
 
 ## Contents
 
-* Layout
-* Form Inputs
-* Buttons
-* Headings
-* Information Wells
-* Alerts
-* Labels
-* Navigation Bars
+* [Layout](#layout)
+* [Form Inputs](#form-inputs)
+* [Buttons](#buttons)
+* [Headings](#headings)
+* [Information Wells](#information-wells)
+* [Alerts](#alerts)
+* [Labels](#labels)
+* [Navigation Bars](#navigation-bars)
 
 ## Layout
 
