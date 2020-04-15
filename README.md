@@ -2,8 +2,6 @@
 
 ### Work in progress
 
-![](buttons.png)
-
 A few UI elements to get you going with simple web projects. This is not meant to replace Bootstrap by any means, it's just aimed at giving you a lightweight way to make things like personal site and test pages look a little nicer.
 
 ## Usage
