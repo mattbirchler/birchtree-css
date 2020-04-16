@@ -254,3 +254,40 @@ textarea {
 .active:hover {
 	color:white;
 }
+
+@media (prefers-color-scheme: dark) {
+	* {
+		color: white;
+	}
+	html {
+		background-color: #222222;
+	}
+	hr {
+		color: white;
+	}
+	.well {
+		background-color: #121212;
+	}
+	input {
+		background-color: #222222;
+		border-color: white;
+	}
+	.alert {
+		background-color: #189fcc;
+	}
+	.alert-success {
+		background-color: #06D6A0;
+	}
+	.alert-warning {
+		background-color: #f47f2c;
+	}
+	.alert-danger {
+		background-color: #EF476F;
+	}
+	.nav {
+		background-color: #121212;
+	}
+	.active {
+		color: white;
+	}
+}
