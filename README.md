@@ -1,6 +1,6 @@
 # Birchtree.css
 
-Mocking up simple personal pages or test sites for your business typically mean using zero, to close to zero styling, and moving on because “it’s just a test site, who cares?” Oh, and these pages usually look like trash on mobile. This is all reasonable, it doesn’t need to be this way!
+Mocking up simple personal pages or test sites for your business typically mean using zero, to close to zero styling, and moving on because "it’s just a test site, who cares?" Oh, and these pages usually look like trash on mobile. This is all reasonable, it doesn’t need to be this way!
 
 Birchtree.css is a small CSS package you can use to make those sites look good with very little effort. You could use this for a full, public website, but it’s lacking a ton of features, so you’d have to build all that out yourself.
 
@@ -15,7 +15,7 @@ Think of this like Bootstrap, but way simpler and way smaller. You use some basi
 In your HTML or PHP file, load the CSS file.
 
 ```html
-<link rel=“stylesheet” src=“birchtree.css”>
+<link rel="stylesheet" src="birchtree.css">
 ```
 
 # Step 2: Use the below formatting to get the styles.
@@ -36,7 +36,7 @@ In your HTML or PHP file, load the CSS file.
 This ain’t Bootstrap, so don’t look to this to do advanced styling for you, but you can use the <code>container</code> class to hold all parts of your page. This simply constrains the width and centers everything on the page.
 
 ```html
-<div class=“container”>
+<div class="container">
     { test page content }
 </div>
 ```
@@ -50,9 +50,9 @@ The building block of almost any test page, form inputs are easily laid out.
 ![](img/text-input.png)
 
 ```html
-<div class=“input input-text”>
-    <span class=“input-label”>Email Address</span>
-    <input class=“input-field” type=“text” placeholder=“someone@example.com” name=“email” value=“”>
+<div class="input input-text">
+    <span class="input-label">Email Address</span>
+    <input class="input-field" type="text" placeholder="someone@example.com" name="email" value="">
 </div>
 ```
 
@@ -61,9 +61,9 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 ![](img/text-input-large.png)
 
 ```html
-<div class=“input input-text input-mega”>
-    <span class=“input-label”>Large Text Field</span>
-    <input class=“input-field” type=“text” placeholder=“someone@example.com” name=“email”>
+<div class="input input-text input-mega">
+    <span class="input-label">Large Text Field</span>
+    <input class="input-field" type="text" placeholder="someone@example.com" name="email">
 </div>
 ```
 
@@ -72,8 +72,8 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 ![](img/checkbox.png)
 
 ```html
-<div class=“input input-chckbox”>
-    <input type=“checkbox”> <span class=“input-label”>Checkbox Stuff</span>
+<div class="input input-chckbox">
+    <input type="checkbox"> <span class="input-label">Checkbox Stuff</span>
 </div>
 ```
 
@@ -82,12 +82,12 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 ![](img/select.png)
 
 ```html
-<div class=“input input-select”>
-    <select class=“input-dropdown”>
-        <option value=“”>— Select An Option —</option>
-        <option value=“1”>One</option>
-        <option value=“2”>Two</option>
-        <option value=“3”>Three</option>
+<div class="input input-select">
+    <select class="input-dropdown">
+        <option value="">— Select An Option —</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
     </select>
 </div>
 ```
@@ -97,9 +97,9 @@ You can also make larger text fields by adding the <code>input-mega</code> class
 ![](img/upload.png)
 
 ```html
-<div class=“input input-upload”>
-    <label class=“input-label” for=“file-upload”>Upload a file</label>
-    <input type=“file” class=“file-upload” id=“file-upload”>
+<div class="input input-upload">
+    <label class="input-label" for="file-upload">Upload a file</label>
+    <input type="file" class="file-upload" id="file-upload">
 </div>
 ```
 
@@ -147,7 +147,7 @@ There is nothing special to do here, Birchtree.css simply makes some small adjus
 Oh, and try using the class <code>site-title</code> to make your page’s name pop even more.
 
 ```html
-<span class=“site-title”>Page Title</span>
+<span class="site-title">Page Title</span>
 ```
 
 ## Information Wells
@@ -157,7 +157,7 @@ Oh, and try using the class <code>site-title</code> to make your page’s name p
 Typically used for instructional text.
 
 ```html
-<div class=“well”>
+<div class="well">
     Paragraph of text goes here.
 </div>
 ```
@@ -169,7 +169,7 @@ Typically used for instructional text.
 Much like a well, these are call outs you can use to show success or error messages, or whatever you want, really.
 
 ```html
-<div class=“alert”>
+<div class="alert">
     Hey, this is an alert that I think you should really care about!
 </div>
 ```
@@ -181,7 +181,7 @@ Much like buttons, this creates a blue alert, and there are some alternate style
 * <code>alert-danger</code>
 
 ```html
-<div class=“alert alert-success”>
+<div class="alert alert-success">
     Hey, this is an alert that I think you should really care about!
 </div>
 ```
@@ -193,7 +193,7 @@ Much like buttons, this creates a blue alert, and there are some alternate style
 If you need to put a badge/label next to something to call it out, labels let you do this.
 
 ```html
-<p>Item <span class=“label”>Badge</span></p>
+<p>Item <span class="label">Badge</span></p>
 ```
 
 Labels will resize based on the size of their parent element, so the above example will be pretty small, but a label on an <code>h1</code> will be much bigger.
@@ -205,7 +205,7 @@ Again, there are a few colors to choose from.
 * <code>label-danger</code>
 
 ```html
-<p>Item <span class=“label label-danger”>Badge</span></p>
+<p>Item <span class="label label-danger">Badge</span></p>
 ```
 
 ## Navigation Bars
@@ -215,10 +215,10 @@ Again, there are a few colors to choose from.
 If you want to link to a few other pages, use the navigation bar element to make nicer links to your other pages.
 
 ```html
-<div class=“nav”>
-    <div class=“nav-item active”>Home</div>
-    <div class=“nav-item”><a href=“https://google.com” target=“_blank”>Google</a></div>
-    <div class=“nav-item”><a href=“https://github.com” target=“_blank”>GitHub</a></div>
+<div class="nav">
+    <div class="nav-item active" aria-current="page">Home</div>
+    <div class="nav-item"><a href="https://google.com" target="_blank">Google</a></div>
+    <div class="nav-item"><a href="https://github.com" target="_blank">GitHub</a></div>
 </div>
 ```
 
@@ -227,7 +227,7 @@ The default is to center the menu items, but you can left or right-justify them 
 ![](img/nav-left.png)
 
 ```html
-<div class=“nav nav-left”>
+<div class="nav nav-left">
     { nav items }
 </div>
 ```
@@ -235,7 +235,7 @@ The default is to center the menu items, but you can left or right-justify them 
 ![](img/nav-right.png)
 
 ```html
-<div class=“nav nav-right”>
+<div class="nav nav-right">
     { nav items }
 </div>
 ```
@@ -243,7 +243,7 @@ The default is to center the menu items, but you can left or right-justify them 
 Also, there is an option to throw a subtle shadow under the navigation to add a little separation.
 
 ```html
-<div class=“nav nav-shadow”>
+<div class="nav nav-shadow">
     { nav items }
 </div>
 ```
